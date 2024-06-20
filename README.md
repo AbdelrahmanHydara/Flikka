@@ -1,7 +1,7 @@
-# flikka
+# Flikka
 
-A new Flutter project.
-
+- Language Learning App.
+  
 ## Getting Started
 
 This project is a starting point for a Flutter application.
