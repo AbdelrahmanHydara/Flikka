@@ -1,6 +1,7 @@
 import 'package:flikka/core/theming/my_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'widgets/already_user.dart';
 import 'widgets/custom_page_indicator.dart';
 import 'widgets/custom_page_view.dart';
 
@@ -33,6 +34,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           CustomPageIndicator(
             pageController: pageController,
           ),
+          const Positioned(
+              left: 0,
+              right: 0,
+              bottom: 50,
+              child: AlreadyUser()),
         ],
       ),
     );
