@@ -1,5 +1,7 @@
 import 'package:flikka/core/components/my_elevated_button.dart';
 import 'package:flikka/core/helpers/spacing.dart';
+import 'package:flikka/core/helpers/extensions.dart';
+import 'package:flikka/core/routing/routes.dart';
 import 'package:flikka/core/theming/my_colors.dart';
 import 'package:flikka/core/theming/my_fonts.dart';
 import 'package:flikka/features/onboarding/model/onboarding_model.dart';
@@ -55,20 +57,6 @@ class CustomPageView extends StatelessWidget {
           onPressed: () {},
         ),
         verticalSpace(40),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Already a user?",
-              style: MyFonts.font16WhiteFaded,
-            ),
-            horizontalSpace(5),
-            Text(
-              "Login",
-              style: MyFonts.font16WhiteFaded.copyWith(color: MyColors.primaryColor),
-            ),
-          ],
-        ),
       ],
     );
   }
