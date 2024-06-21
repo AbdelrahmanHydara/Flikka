@@ -1,6 +1,6 @@
-# flikka
+# Flikka
 
-A new Flutter project.
+- Language Learning App.
 
 ## Getting Started
 
