@@ -41,9 +41,10 @@ dependencies:
   flutter_screenutil: ^5.9.0
   # Customizable animated page indicator with a set of built-in effects.
   smooth_page_indicator: ^1.1.0
-  # Wraps platform-specific persistent storage for simple data
+  # Wraps platform-specific persistent storage for simple data.
   shared_preferences: ^2.2.1
-
+  # A Flutter package to use fonts from fonts.google.com.
+  google_fonts: 6.0.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"

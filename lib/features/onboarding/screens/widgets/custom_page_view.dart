@@ -39,10 +39,15 @@ class CustomPageView extends StatelessWidget {
           style: MyFonts.font22White,
         ),
         verticalSpace(10),
-        Text(
-          onBoardingModel.body,
-          textAlign: TextAlign.center,
-          style: MyFonts.font16WhiteFaded,
+        Padding(
+          padding: EdgeInsets.symmetric(
+              horizontal: 10.w,
+            ),
+          child: Text(
+            onBoardingModel.body,
+            textAlign: TextAlign.center,
+            style: MyFonts.font16WhiteFaded,
+          ),
         ),
         verticalSpace(50),
         MyElevatedButton(
