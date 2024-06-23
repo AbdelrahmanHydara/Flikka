@@ -11,7 +11,7 @@ class CustomPageIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned(
       left: 160.w,
-      bottom: 335 .h,
+      bottom: 370 .h,
       child: SmoothPageIndicator(
         controller: pageController,
         count: OnBoardingModel.onboardingList.length,

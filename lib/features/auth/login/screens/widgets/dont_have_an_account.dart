@@ -13,7 +13,7 @@ class DontHaveAnAccount  extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Don't have an account ? ",
+          "Don't have an account ?",
           style: MyFonts.font16WhiteFaded,
         ),
         TextButton(

@@ -37,7 +37,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           const Positioned(
               left: 0,
               right: 0,
-              bottom: 50,
+              bottom: 75,
               child: AlreadyUser()),
         ],
       ),
