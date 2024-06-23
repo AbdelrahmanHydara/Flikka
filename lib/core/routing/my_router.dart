@@ -1,5 +1,6 @@
 import 'package:flikka/core/routing/routes.dart';
 import 'package:flikka/features/auth/login/screens/login_screen.dart';
+import 'package:flikka/features/auth/register/screens/register_screen.dart';
 import 'package:flikka/features/onboarding/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,10 +17,10 @@ class MyRouter {
         return MaterialPageRoute(
           builder: (context) => const LoginScreen(),
         );
-      // case Routes.registerScreen:
-      //   return MaterialPageRoute(
-      //     builder: (context) => const RegisterScreen(),
-      //   );
+      case Routes.registerScreen:
+        return MaterialPageRoute(
+          builder: (context) => const RegisterScreen(),
+        );
     }
     return null;
   }
