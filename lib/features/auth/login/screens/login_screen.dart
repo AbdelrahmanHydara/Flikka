@@ -1,3 +1,4 @@
+import 'package:flikka/core/components/my_arrow_back.dart';
 import 'package:flikka/core/helpers/spacing.dart';
 import 'package:flikka/core/theming/my_fonts.dart';
 import 'package:flutter/material.dart';
@@ -40,13 +41,7 @@ class LoginScreen extends StatelessWidget {
 
   AppBar _buildAppBar(context) {
     return AppBar(
-      leading: IconButton(onPressed: () {
-        Navigator.pop(context);
-      },
-        icon: const Icon(
-          Icons.arrow_back_ios_outlined,
-        ),
-      ),
+      leading: const MyArrowBack(),
       title: Text(
         "Login",
         style: MyFonts.font22White,
