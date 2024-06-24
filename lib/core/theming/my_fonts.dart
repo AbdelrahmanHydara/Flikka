@@ -3,6 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyFonts {
+  static TextStyle get font24White => GoogleFonts.fredoka(
+    color: Colors.white,
+    fontSize: 24.sp,
+      );
+
   static TextStyle get font22White => GoogleFonts.fredoka(
     color: Colors.white,
     fontSize: 22.sp,
