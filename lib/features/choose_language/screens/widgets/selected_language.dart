@@ -20,7 +20,7 @@ class SelectedLanguage extends StatelessWidget {
                 itemCount: context.read<ChooseLanguageCubit>().languages.length,
                 itemBuilder: (context, index) {
                   final language = context.read<ChooseLanguageCubit>().languages[index];
-                  final isSelected = context.read<ChooseLanguageCubit>().selectedLanguage == language["code"];
+                  final isSelected = context.read<ChooseLanguageCubit>().selectedLanguage == language['language'];
                   return GestureDetector(
                     onTap: () {
                       context.read<ChooseLanguageCubit>().emitSelectedLanguage(index);
@@ -35,8 +35,7 @@ class SelectedLanguage extends StatelessWidget {
                         vertical: 10.h,
                       ),
                       decoration: BoxDecoration(
-                        color: isSelected ? MyColors.primaryColor : MyColors
-                            .fadedBlueColor,
+                        color: isSelected ? MyColors.primaryColor : MyColors.fadedBlueColor,
                         borderRadius: BorderRadius.circular(10.r),
                       ),
                       child: Row(
