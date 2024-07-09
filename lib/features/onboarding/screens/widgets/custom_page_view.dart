@@ -48,7 +48,8 @@ class CustomPageView extends StatelessWidget {
                 ),
               ),
               verticalSpace(50),
-              MyElevatedButton(
+              if(index == 0 || index == 1) const SizedBox()
+              else MyElevatedButton(
                 text: "Choose Language",
                 onPressed: () {
                   context.pushNamed(Routes.chooseLanguage);
