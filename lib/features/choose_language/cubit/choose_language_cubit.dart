@@ -6,6 +6,7 @@ class ChooseLanguageCubit extends Cubit<ChooseLanguageState> {
   ChooseLanguageCubit() : super(ChooseLanguageInitial());
 
   String? selectedLanguage;
+
   final List<Map<String, dynamic>> languages = [
     {'code': 'SA', 'flag': '🇸🇦', 'language': 'Arabic'},
     {'code': 'GB', 'flag': '🇬🇧', 'language': 'English'},
@@ -27,5 +28,4 @@ class ChooseLanguageCubit extends Cubit<ChooseLanguageState> {
   Future<void> saveSelectedLanguage() async {
     await SharedPrefHelper.setData('selectedLanguage', selectedLanguage);
   }
-
 }

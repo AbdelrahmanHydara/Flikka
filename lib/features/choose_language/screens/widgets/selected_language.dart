@@ -35,7 +35,7 @@ class SelectedLanguage extends StatelessWidget {
                         vertical: 10.h,
                       ),
                       decoration: BoxDecoration(
-                        color: isSelected ? MyColors.primaryColor : MyColors.fadedBlueColor,
+                        color: isSelected ? MyColors.mintColor : MyColors.fadedBlueColor,
                         borderRadius: BorderRadius.circular(10.r),
                       ),
                       child: Row(
@@ -55,10 +55,10 @@ class SelectedLanguage extends StatelessWidget {
                       ),
                     ),
                   );
-                }
-            );
-  },
-)
+                  },
+                );
+            },
+        ),
     );
   }
 }
