@@ -1,3 +1,5 @@
+import 'package:flikka/core/helpers/extensions.dart';
+import 'package:flikka/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flikka/core/components/my_elevated_button.dart';
 import 'package:flikka/core/components/text_with_text_form_field.dart';
@@ -37,8 +39,8 @@ class FormRegister extends StatelessWidget {
         MyElevatedButton(
           text: "Sign Up",
           onPressed: () {
-
-          },
+            context.pushNamed(Routes.accountSetup);
+            },
         ),
       ],
     );

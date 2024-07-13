@@ -1,3 +1,4 @@
+import 'package:flikka/core/helpers/constants.dart';
 import 'package:flikka/core/helpers/shared_pref_helper.dart';
 import 'package:flikka/features/choose_language/cubit/choose_language_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,6 +27,6 @@ class ChooseLanguageCubit extends Cubit<ChooseLanguageState> {
   }
 
   Future<void> saveSelectedLanguage() async {
-    await SharedPrefHelper.setData('selectedLanguage', selectedLanguage);
+    await SharedPrefHelper.setData(SharedPrefKeys.selectedLanguage, selectedLanguage);
   }
 }

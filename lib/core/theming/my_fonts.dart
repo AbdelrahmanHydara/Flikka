@@ -26,5 +26,9 @@ class MyFonts {
     color: Colors.grey.withOpacity(.4),
     fontSize: 16.sp,
       );
+  static TextStyle get font16GreyLittleFaded => GoogleFonts.fredoka(
+    color: Colors.grey.withOpacity(.6),
+    fontSize: 16.sp,
+      );
 
 }
