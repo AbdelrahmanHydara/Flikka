@@ -1,4 +1,6 @@
 import 'package:flikka/core/routing/routes.dart';
+import 'package:flikka/features/account_setup/screens/account_setup_screen.dart';
+import 'package:flikka/features/account_setup/screens/widgets/congratulations_screen.dart';
 import 'package:flikka/features/auth/login/screens/login_screen.dart';
 import 'package:flikka/features/auth/register/screens/register_screen.dart';
 import 'package:flikka/features/choose_language/cubit/choose_language_cubit.dart';
@@ -29,6 +31,14 @@ class MyRouter {
           builder: (context) => BlocProvider(
               create: (BuildContext context) => ChooseLanguageCubit(),
               child: const ChooseLanguageScreen()),
+        );
+      case Routes.accountSetup:
+        return MaterialPageRoute(
+          builder: (context) => const AccountSetupScreen(),
+        );
+      case Routes.congratulationsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const CongratulationsScreen(),
         );
     }
     return null;
